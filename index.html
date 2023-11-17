@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- DGL 103 CVS2 - Madison - Project -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
 
   <body>
     <header>
+      <div class="container">
+        <a class="logo" href="index.html"
+          ><img
+            src="images/nicole-cahoon-logo.png" alt="Nicole Cahoon logo"
+        /></a>
+        <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+      </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
+        <ul id="nav-items">
+          <li><a class="current-page" href="index.html">Home</a></li>
           <li><a href="about-us.html">About us</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -21,8 +39,9 @@
     </header>
 
     <main>
-      <section>
-        <h1>Nicole Cahoon, CPA</h1>
+      <section class="hero">
+        <h1>Nicole Cahoon</h1>
+        <h2>Chartered Professional Accountant</h2>
         <p>
           We offer a full range of accounting and bookkeeping services to small
           and mid-sized businesses in Courtenay, Comox, Cumberland and all
@@ -105,6 +124,11 @@
     </main>
 
     <footer>
+      <img
+        src="images/cpa-logo.png"
+        width="150px"
+        alt="Chartered Professional Accountants logo"
+      />
       <nav>
         <ul>
           <li><a href="about-us.html">About us</a></li>
@@ -129,3 +153,11 @@
     </footer>
   </body>
 </html>
+
+<!-- JavaScript -->
+<script>
+  function showNav() {
+    var element = document.getElementById("nav-items");
+    element.classList.toggle("show-items");
+  }
+</script>
