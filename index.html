@@ -9,9 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
 
@@ -20,7 +23,8 @@
       <div class="container">
         <a class="logo" href="index.html"
           ><img
-            src="images/nicole-cahoon-logo-white.png" alt="Nicole Cahoon logo"
+            src="images/nicole-cahoon-logo-white.png"
+            alt="Nicole Cahoon logo"
         /></a>
         <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
       </div>
@@ -40,9 +44,9 @@
         <h1>Nicole Cahoon</h1>
         <h2>Chartered Professional Accountant</h2>
         <p>
-          We offer a <b>full range of accounting and bookkeeping services</b> to small
-          and medium sized businesses in Courtenay, Comox, Cumberland and all
-          neighbouring towns in the Comox Valley.
+          We offer a <b>full range of accounting and bookkeeping services</b> to
+          small and medium sized businesses in Courtenay, Comox, Cumberland and
+          all neighbouring towns in the Comox Valley.
         </p>
         <a class="button" href="about-us">About us</a>
       </section>
@@ -60,9 +64,9 @@
           <div class="wrapper-item">
             <h3>Business Consulting Services</h3>
             <p>
-              We can help your Comox valley business identify areas that affecting
-              profitability and growth and we can develop solutions that are right
-              for you.
+              We can help your Comox valley business identify areas that
+              affecting profitability and growth and we can develop solutions
+              that are right for you.
             </p>
           </div>
           <div class="wrapper-item">
@@ -116,9 +120,13 @@
           today!
         </p>
         <address>
-          <!-- #TODO: add phone and mail icons -->
-          <a href="tel:250-871-1121">250-871-1121</a>
-          <a href="mailto:nicole@nicolecahoon.com">nicole@nicolecahoon.com</a>
+          <a href="tel:250-871-1121"
+            ><i class="fa fa-phone" aria-hidden="true"></i> 250-871-1121</a
+          >
+          <a href="mailto:nicole@nicolecahoon.com"
+            ><i class="fa fa-envelope" aria-hidden="true"></i
+            >nicole@nicolecahoon.com</a
+          >
         </address>
       </section>
 
@@ -129,27 +137,46 @@
     </main>
 
     <footer>
-      <img
-        src="images/cpa-logo.png"
-        width="150px"
-        alt="Chartered Professional Accountants logo"
-      />
-      <nav>
-        <ul>
-          <li><a href="about-us.html">About us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="resources.html">Resources</a></li>
-        </ul>
-      </nav>
-      <h2>Contact</h2>
-      <address>
-        <!-- #TODO: add phone and mail icons -->
-        <a href="tel:250-871-1121">250-871-1121</a>
-        <a href="mailto:nicole@nicolecahoon.com">nicole@nicolecahoon.com</a>
-      </address>
-      <a href="#" target="_blank">Follow us on Facebook</a>
-      <hr />
-      <p>
+      <div class="wrapper-content">
+        <div class="wrapper-logos">
+          <img
+            width="120"
+            src="images/nicole-cahoon-logo.png"
+            alt="Nicole Cahoon logo"
+          />
+          <img
+            width="120"
+            src="images/cpa-logo.png"
+            alt="Chartered Professional Accountants logo"
+          />
+        </div>
+        <div class="wrapper-contact">
+          <h2>Contact</h2>
+          <address>
+            <a href="tel:250-871-1121"
+              ><i class="fa fa-phone" aria-hidden="true"></i> 250-871-1121</a
+            >
+            <a href="mailto:nicole@nicolecahoon.com"
+              ><i class="fa fa-envelope" aria-hidden="true"></i>
+              nicole@nicolecahoon.com</a
+            >
+          </address>
+        </div>
+        <a href="#"
+          ><div class="facebook">
+            <img src="images/facebook-logo.png" alt="Facebook logo" />
+            <p>Follow us on <span>Facebook</span></p>
+          </div></a
+        >
+        <nav>
+          <ul>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="disclaimer">
         This is a fictional website that was designed and coded as an
         educational exercise. It is not intended to be seen outside of the class
         environment. None of the content and images were approved by the

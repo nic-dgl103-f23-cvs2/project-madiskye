@@ -10,7 +10,7 @@ body {
   background-color: #151617;
   color: #f6f7ee;
   font-size: 1.6rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* == TYPOGRAPHY */
@@ -19,7 +19,7 @@ h1,
 h2,
 h3 {
   color: #fff;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 h1 {
@@ -34,6 +34,10 @@ p {
 
 b {
   font-weight: 700;
+}
+
+a {
+  text-decoration: none;
 }
 
 .button {
@@ -54,6 +58,11 @@ b {
   color: #151617;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 /* == HEADER */
 
 header {
@@ -69,23 +78,21 @@ header .container {
   width: 150px;
 }
 
-nav ul {
+header ul {
   display: none;
-  list-style-type: none;
 }
 
-nav li {
+header li {
   padding: 10px 0;
 }
 
-nav a {
+header a {
   color: inherit;
-  text-decoration: none;
   font-style: italic;
   font-weight: 300;
 }
 
-nav a:hover {
+header a:hover {
   color: #e15d5d;
 }
 
@@ -130,7 +137,7 @@ nav a:hover {
 /* == SERVICES */
 
 .services {
-  padding: 20px 4%;
+  padding: 15px 4% 30px;
 }
 
 .services h2 {
@@ -148,6 +155,83 @@ nav a:hover {
 .services .wrapper-item {
   margin: 10px 0;
   padding-left: 10px;
-  border-left: 60px solid #a62929;
+  border-left: 50px solid #a62929;
   border-radius: 10px;
+}
+
+/* == TESTIMONIALS */
+
+/* == FOOTER */
+
+footer .wrapper-content {
+  background-color: #f6f7ee;
+  color: #151617;
+  padding: 20px;
+  border-top: 4px solid #a62929;
+}
+
+footer .wrapper-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .wrapper-contact {
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #151617;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+address a {
+  font-style: normal;
+  display: block;
+  margin: 10px 0;
+}
+
+.facebook {
+  background-color: #151617;
+  color: #f6f7ee;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: end;
+  width: fit-content;
+  padding: 7px 10px 12px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.facebook img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.facebook span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0 0;
+}
+
+footer li a {
+  color: #a62929;
+  font-size: 1.8rem;
+}
+
+footer li a:hover {
+  color: #151617;
+}
+
+footer .disclaimer {
+  font-style: italic;
+  padding: 20px;
 }
