@@ -171,9 +171,43 @@ header li:hover {
 
 /* == TESTIMONIALS */
 
+.testimonials {
+  padding: 30px 5% 10px;
+}
+
+.testimonials h2 {
+  font-size: 3.3rem;
+}
+
+.testimonials p {
+  background-color: #f6f7ee;
+  color: #151617;
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 25px 0 10px;
+}
+
+.testimonials i {
+  color: #9B2727;
+}
+
+.testimonials cite {
+  font-weight: 600;
+  font-style: normal;
+  padding-left: 20px;
+}
+
+.testimonials hr {
+  color: #a62929;
+  max-width: 50%;
+  margin: 20px;
+}
+
 /* == CALL TO ACTION */
 
 /* -- book appointment */
+
 .book-appointment {
   background: linear-gradient(to right bottom, rgb(89, 83, 83), rgb(44, 39, 39));
   padding: 20px 18px;
@@ -194,7 +228,7 @@ header li:hover {
 
 .book-appointment address {
   background-color: #f6f7ee;
-  padding: 10px 7%;
+  padding: 10px 20px;
   border-radius: 5px;
 }
 
@@ -203,8 +237,9 @@ header li:hover {
 }
 
 /* -- newsletter */
+
 .newsletter {
-  padding: 0 5% 50px;
+  padding: 30px 5% 60px;
 }
 
 /* == FOOTER */
