@@ -39,6 +39,7 @@ b {
 ul {
   list-style-type: none;
   padding-left: 0;
+  font-style: italic;
 }
 
 a {
@@ -63,7 +64,7 @@ a {
 }
 
 address a {
-  color: #9B2727;
+  color: #9b2727;
   font-style: normal;
   line-height: 3.9rem;
   display: block;
@@ -98,7 +99,6 @@ header li {
 
 header a {
   color: inherit;
-  font-style: italic;
   font-weight: 300;
 }
 
@@ -189,7 +189,7 @@ header li:hover {
 }
 
 .testimonials i {
-  color: #9B2727;
+  color: #9b2727;
 }
 
 .testimonials cite {
@@ -209,7 +209,11 @@ header li:hover {
 /* -- book appointment */
 
 .book-appointment {
-  background: linear-gradient(to right bottom, rgb(89, 83, 83), rgb(44, 39, 39));
+  background: linear-gradient(
+    to right bottom,
+    rgb(89, 83, 83),
+    rgb(44, 39, 39)
+  );
   padding: 20px 18px;
   border-radius: 5px;
   margin: 30px 5%;
@@ -244,16 +248,20 @@ header li:hover {
 
 /* == FOOTER */
 
-footer .wrapper-content {
+.footer {
   background-color: #f6f7ee;
   color: #151617;
-  padding: 20px 5%;
   border-top: 4px solid #a62929;
+}
+
+footer .wrapper-content {
+  padding: 20px 5%;
 }
 
 footer .wrapper-logos {
   display: flex;
   justify-content: space-between;
+  flex-basis: 100%;
 }
 
 .wrapper-logos img {
@@ -301,7 +309,7 @@ footer ul {
 }
 
 footer li a {
-  color: #9B2727;
+  color: #9b2727;
   font-size: 1.8rem;
 }
 
@@ -312,4 +320,52 @@ footer li a:hover {
 footer .disclaimer {
   font-style: italic;
   padding: 20px 5%;
+}
+
+/* Large devices (desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+  .wrapper-width {
+    width: 1170px;
+    margin: auto;
+  }
+
+  /* == HEADER */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px 0 12px 0;
+  }
+
+  .logo img {
+    width: 180px;
+  }
+
+  header ul {
+    display: flex;
+    gap: 50px;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  /* == HERO */
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 7rem;
+  }
+
+  .hero p {
+    max-width: 50%;
+    margin: 40px auto;
+  }
+
+  /* == SERVICES */
 }
