@@ -1,3 +1,5 @@
+/* == GENERAL */
+
 html {
   font-size: 62.5%;
 }
@@ -13,7 +15,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* == TYPOGRAPHY */
+.wrapper-width {
+  margin: 0 5%;
+}
+
+/* -- TYPOGRAPHY */
 
 h1,
 h2,
@@ -74,13 +80,15 @@ address a:hover {
   color: #151617;
 }
 
-/* == HEADER */
+/* == SITEWIDE */
+
+/* -- HEADER */
 
 header {
-  padding: 15px 6% 12px 4%;
+  padding: 15px 1% 12px 0;
 }
 
-header .container {
+header .wrapper-nav {
   display: flex;
   justify-content: space-between;
 }
@@ -123,7 +131,85 @@ header li:hover {
   padding: 0;
 }
 
-/* == HERO */
+/* -- FOOTER */
+
+.footer {
+  background-color: #f6f7ee;
+  color: #151617;
+  border-top: 4px solid #a62929;
+}
+
+footer .wrapper-content {
+  padding: 20px 0;
+}
+
+footer .wrapper-logos {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
+.wrapper-logos img {
+  align-self: end;
+}
+
+footer .wrapper-contact {
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer h2 {
+  color: #151617;
+  font-weight: 600;
+  margin: 18px 0 9px;
+}
+
+.facebook {
+  background-color: #151617;
+  color: #f6f7ee;
+  font-size: 1.4rem;
+  text-align: initial;
+  display: flex;
+  align-items: end;
+  width: fit-content;
+  padding: 7px 10px 12px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.facebook img {
+  margin-right: 10px;
+}
+
+.facebook span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 10px;
+}
+
+footer li a {
+  color: #9b2727;
+  font-size: 1.8rem;
+}
+
+footer li a:hover {
+  color: #151617;
+}
+
+footer .disclaimer {
+  font-style: italic;
+  padding: 20px 0;
+}
+
+/* == HOMEPAGE */
+
+/* -- HERO */
 
 .hero {
   padding: 30px 0;
@@ -144,10 +230,10 @@ header li:hover {
   line-height: 2.5rem;
 }
 
-/* == SERVICES */
+/* -- SERVICES */
 
 .services {
-  padding: 15px 5% 30px;
+  padding: 15px 0 30px;
 }
 
 .services h2 {
@@ -169,10 +255,10 @@ header li:hover {
   margin: 12px 0;
 }
 
-/* == TESTIMONIALS */
+/* -- TESTIMONIALS */
 
 .testimonials {
-  padding: 30px 5% 10px;
+  padding: 30px 0 10px;
 }
 
 .testimonials h2 {
@@ -204,9 +290,9 @@ header li:hover {
   margin: 20px;
 }
 
-/* == CALL TO ACTION */
+/* -- CALL TO ACTION */
 
-/* -- book appointment */
+/* book appointment */
 
 .book-appointment {
   background: linear-gradient(
@@ -216,7 +302,7 @@ header li:hover {
   );
   padding: 20px 18px;
   border-radius: 5px;
-  margin: 30px 5%;
+  margin: 30px 0;
 }
 
 .book-appointment h2 {
@@ -240,86 +326,10 @@ header li:hover {
   font-size: 1.8rem;
 }
 
-/* -- newsletter */
+/* newsletter */
 
 .newsletter {
-  padding: 30px 5% 60px;
-}
-
-/* == FOOTER */
-
-.footer {
-  background-color: #f6f7ee;
-  color: #151617;
-  border-top: 4px solid #a62929;
-}
-
-footer .wrapper-content {
-  padding: 20px 5%;
-}
-
-footer .wrapper-logos {
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 100%;
-}
-
-.wrapper-logos img {
-  align-self: end;
-}
-
-footer .wrapper-contact {
-  text-align: center;
-  padding: 10px 0;
-}
-
-footer h2 {
-  color: #151617;
-  font-weight: 600;
-  margin: 18px 0 9px;
-}
-
-.facebook {
-  background-color: #151617;
-  color: #f6f7ee;
-  font-size: 1.4rem;
-  display: flex;
-  align-items: end;
-  width: fit-content;
-  padding: 7px 10px 12px;
-  border-radius: 5px;
-  margin: 15px auto;
-}
-
-.facebook img {
-  width: 40px;
-  margin-right: 10px;
-}
-
-.facebook span {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-around;
-  margin: 40px 0 10px;
-}
-
-footer li a {
-  color: #9b2727;
-  font-size: 1.8rem;
-}
-
-footer li a:hover {
-  color: #151617;
-}
-
-footer .disclaimer {
-  font-style: italic;
-  padding: 20px 5%;
+  padding: 30px 0 60px;
 }
 
 /* Large devices (desktops, 1200px and up) */
@@ -330,7 +340,9 @@ footer .disclaimer {
     margin: auto;
   }
 
-  /* == HEADER */
+  /* == SITEWIDE */
+
+  /* -- HEADER */
 
   header {
     display: flex;
@@ -352,7 +364,41 @@ footer .disclaimer {
     display: none;
   }
 
-  /* == HERO */
+  /* -- FOOTER */
+
+  footer .wrapper-content {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+  }
+
+  footer .wrapper-logos {
+    justify-content: start;
+    gap: 50px;
+    order: 1;
+  }
+
+  footer .wrapper-contact {
+    text-align: right;
+    order: 3;
+  }
+
+  footer .facebook {
+    margin: 0;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  footer nav {
+    order: 2;
+  }
+
+  /* == HOMEPAGE */
+
+  /* -- HERO */
 
   .hero {
     padding: 60px 0;
@@ -367,5 +413,63 @@ footer .disclaimer {
     margin: 40px auto;
   }
 
-  /* == SERVICES */
+  /* -- SERVICES */
+
+  .services {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .services .wrapper-content {
+    display: flex;
+    gap: 8%;
+  }
+
+  .services .wrapper-item {
+    flex-basis: 33%;
+    flex-grow: 1;
+  }
+
+  /* -- TESTIMONIALS */
+
+  /* .testimonials {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .testimonials h2 {
+    color: inherit;
+  }
+
+  .testimonials .wrapper-content {
+    display: flex;
+    gap: 5%;
+    background-color: #f6f7ee;
+    color: #151617;
+    padding: 0 20px 20px;
+    border-radius: 5px;
+  }
+
+  .testimonials blockquote {
+    flex-basis: 33%;
+  }
+
+  .testimonials i {
+    color: #e15d5d
+  }
+
+  .testimonials p {
+    background-color: #151617;
+    color: #f6f7ee;
+    padding: 30px;
+    align-self: stretch;
+  }
+
+  .testimonials cite {
+    color: #691e1e;
+  }
+
+  .testimonials hr {
+    display: none;
+  } */
 }
