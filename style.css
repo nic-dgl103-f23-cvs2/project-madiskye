@@ -36,6 +36,11 @@ b {
   font-weight: 700;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -44,7 +49,6 @@ a {
   background-color: #a62929;
   color: #f6f7ee;
   font-style: italic;
-  text-decoration: none;
   text-align: center;
   display: block;
   max-width: fit-content;
@@ -58,9 +62,15 @@ a {
   color: #151617;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
+address a {
+  color: #9B2727;
+  font-style: normal;
+  line-height: 3.9rem;
+  display: block;
+}
+
+address a:hover {
+  color: #151617;
 }
 
 /* == HEADER */
@@ -92,7 +102,7 @@ header a {
   font-weight: 300;
 }
 
-header a:hover {
+header li:hover {
   color: #e15d5d;
 }
 
@@ -137,7 +147,7 @@ header a:hover {
 /* == SERVICES */
 
 .services {
-  padding: 15px 4% 30px;
+  padding: 15px 5% 30px;
 }
 
 .services h2 {
@@ -145,7 +155,7 @@ header a:hover {
 }
 
 .services p {
-  margin: 5px 0;
+  margin-top: 7px;
 }
 
 .services .wrapper-content {
@@ -153,20 +163,56 @@ header a:hover {
 }
 
 .services .wrapper-item {
-  margin: 10px 0;
-  padding-left: 10px;
+  padding-left: 12px;
   border-left: 50px solid #a62929;
   border-radius: 10px;
+  margin: 12px 0;
 }
 
 /* == TESTIMONIALS */
+
+/* == CALL TO ACTION */
+
+/* -- book appointment */
+.book-appointment {
+  background: linear-gradient(to right bottom, rgb(89, 83, 83), rgb(44, 39, 39));
+  padding: 20px 18px;
+  border-radius: 5px;
+  margin: 30px 5%;
+}
+
+.book-appointment h2 {
+  font-size: 2.5rem;
+}
+
+.book-appointment p {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  margin: 10px 0 20px;
+}
+
+.book-appointment address {
+  background-color: #f6f7ee;
+  padding: 10px 7%;
+  border-radius: 5px;
+}
+
+.book-appointment a {
+  font-size: 1.8rem;
+}
+
+/* -- newsletter */
+.newsletter {
+  padding: 0 5% 50px;
+}
 
 /* == FOOTER */
 
 footer .wrapper-content {
   background-color: #f6f7ee;
   color: #151617;
-  padding: 20px;
+  padding: 20px 5%;
   border-top: 4px solid #a62929;
 }
 
@@ -175,22 +221,19 @@ footer .wrapper-logos {
   justify-content: space-between;
 }
 
+.wrapper-logos img {
+  align-self: end;
+}
+
 footer .wrapper-contact {
   text-align: center;
   padding: 10px 0;
 }
 
 footer h2 {
-  font-family: "Open Sans", sans-serif;
   color: #151617;
-  font-weight: 800;
-  margin: 10px 0;
-}
-
-address a {
-  font-style: normal;
-  display: block;
-  margin: 10px 0;
+  font-weight: 600;
+  margin: 18px 0 9px;
 }
 
 .facebook {
@@ -202,7 +245,7 @@ address a {
   width: fit-content;
   padding: 7px 10px 12px;
   border-radius: 5px;
-  margin: auto;
+  margin: 15px auto;
 }
 
 .facebook img {
@@ -218,12 +261,12 @@ address a {
 
 footer ul {
   display: flex;
-  justify-content: space-evenly;
-  margin: 30px 0 0;
+  justify-content: space-around;
+  margin: 40px 0 10px;
 }
 
 footer li a {
-  color: #a62929;
+  color: #9B2727;
   font-size: 1.8rem;
 }
 
@@ -233,5 +276,5 @@ footer li a:hover {
 
 footer .disclaimer {
   font-style: italic;
-  padding: 20px;
+  padding: 20px 5%;
 }
