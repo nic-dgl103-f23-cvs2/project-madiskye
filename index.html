@@ -130,10 +130,10 @@
           today!
         </p>
         <address>
-          <a href="tel:#"
+          <a href="tel:"
             ><i class="fa fa-phone" aria-hidden="true"></i> 250-871-1121</a
           >
-          <a href="mailto:#"
+          <a href="mailto:"
             ><i class="fa fa-envelope" aria-hidden="true"></i>
             nicole@nicolecahoon.com</a
           >
@@ -143,11 +143,19 @@
       <section class="newsletter">
         <h2>Sign up for our newsletter for tax tips!</h2>
         <form method="post" action="">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" placeholder="Your Name" required />
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" placeholder="Your Email" required />
-          <input type="submit" value="Submit" />
+          <div class="form-input">
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" id="fname" required />
+          </div>
+          <div class="form-input">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastname" id="lname" required />
+          </div>
+          <div class="form-input">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" required />
+            <input type="submit" value="Submit" />
+          </div>
         </form>
       </section>
     </main>
@@ -178,16 +186,16 @@
                 nicole@nicolecahoon.com</a
               >
             </address>
-            <a href="#" target="_blank"
-              ><div class="facebook">
+            <a href="#" target="_blank">
+              <div class="facebook">
                 <img
                   src="images/facebook-logo.png"
                   width="40"
                   alt="Facebook logo"
                 />
                 <p>Follow us on <span>Facebook</span></p>
-              </div></a
-            >
+              </div>
+            </a>
           </div>
           <nav>
             <ul>
@@ -197,7 +205,9 @@
               <li><a href="resources.html">Resources</a></li>
             </ul>
           </nav>
-          <p class="call">Call us for help with your personal and business taxes</p>
+          <p class="call">
+            Call us for help with your personal and business taxes
+          </p>
         </div>
       </div>
       <p class="disclaimer wrapper-width">

@@ -324,7 +324,39 @@ footer .disclaimer {
 /* newsletter */
 
 .newsletter {
-  padding: 30px 0 60px;
+  padding: 20px 18px 15px;
+  border: solid 2px #a62929;
+  border-radius: 5px;
+  margin: 60px 0;
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.newsletter input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  margin: 5px 0;
+}
+
+.newsletter .form-input {
+  padding: 5px 0;
+}
+
+.newsletter input[type="submit"] {
+  background-color: #9b2727;
+  color: #f6f7ee;
+  font-size: 1.6rem;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 5px;
+  max-width: fit-content;
+  margin: 25px auto 0;
 }
 
 /* == RESOURCES */
