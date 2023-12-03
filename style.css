@@ -103,7 +103,6 @@ header ul {
 
 header li {
   padding: 10px 0;
-  margin: 0 10px;
 }
 
 header a {
@@ -113,17 +112,6 @@ header a {
 
 header li:hover {
   color: #e15d5d;
-}
-
-.current-page {
-  background-color: #f6f7ee;
-  color: #151617;
-  padding: 4px 8px;
-  border-radius: 2px;
-}
-
-.current-page:hover {
-  color: initial;
 }
 
 .show-items {
@@ -188,9 +176,12 @@ footer h2 {
 }
 
 footer ul {
-  display: flex;
+  text-align: center;
   justify-content: space-around;
-  margin: 10px 0;
+}
+
+footer li {
+  margin-bottom: 20px;
 }
 
 footer li a {
@@ -200,6 +191,10 @@ footer li a {
 
 footer li a:hover {
   color: #151617;
+}
+
+footer .call {
+  display: none;
 }
 
 footer .disclaimer {
@@ -332,6 +327,15 @@ footer .disclaimer {
   padding: 30px 0 60px;
 }
 
+/* == RESOURCES */
+
+/* -- TAX CHECKLIST */
+
+th {
+  background-color: #9b2727;
+  text-align: initial;
+}
+
 /* Large devices (desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
@@ -364,36 +368,81 @@ footer .disclaimer {
     display: none;
   }
 
+  .current-page {
+    background-color: #f6f7ee;
+    color: #151617;
+    padding: 4px 8px;
+    border-radius: 2px;
+  }
+  
+  .current-page:hover {
+    color: initial;
+  }
+
   /* -- FOOTER */
 
   footer .wrapper-content {
     display: flex;
     align-items: start;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 20px 0;
   }
 
   footer .wrapper-logos {
-    justify-content: start;
+    flex-direction: column;
+    align-items: start;
     gap: 50px;
-    order: 1;
+    padding-top: 10px;
+  }
+
+  footer .wrapper-logos img {
+    align-self: center;
+    width: 160px;
+  }
+
+  footer h2 {
+    margin-top: 0px;
+  }
+
+  footer .call {
+    background-image: url(images/Untitled-1.png);
+    background-size: contain;
+    max-width: 20%;
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 600;
+    background-color: #151617;
+    color: #f6f7ee;
+    border-radius: 5px;
+    padding: 10px 0 10px 20px;
+    display: initial;
+    margin: 20px 0 0 50px;
   }
 
   footer .wrapper-contact {
-    text-align: right;
-    order: 3;
+    text-align: initial;
+    padding: 0 20px 0 50px;
   }
 
   footer .facebook {
-    margin: 0;
+    margin-left: 0;
   }
 
   footer ul {
+    display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
+    text-align: initial;
   }
 
   footer nav {
-    order: 2;
+    padding: 0 30px 0 10px;
+    margin-top: 20px;
+    border-left: solid 2px #585252;
+  }
+
+  footer li {
+    margin-bottom: 0px;
   }
 
   /* == HOMEPAGE */
@@ -420,6 +469,12 @@ footer .disclaimer {
     margin: auto;
   }
 
+  .services h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 30px 0 10px;
+  }
+
   .services .wrapper-content {
     display: flex;
     gap: 8%;
@@ -430,46 +485,11 @@ footer .disclaimer {
     flex-grow: 1;
   }
 
+  .services i {
+    font-size: 5rem;
+    color: #a62929;
+  }
+
   /* -- TESTIMONIALS */
 
-  /* .testimonials {
-    max-width: 90%;
-    margin: auto;
-  }
-
-  .testimonials h2 {
-    color: inherit;
-  }
-
-  .testimonials .wrapper-content {
-    display: flex;
-    gap: 5%;
-    background-color: #f6f7ee;
-    color: #151617;
-    padding: 0 20px 20px;
-    border-radius: 5px;
-  }
-
-  .testimonials blockquote {
-    flex-basis: 33%;
-  }
-
-  .testimonials i {
-    color: #e15d5d
-  }
-
-  .testimonials p {
-    background-color: #151617;
-    color: #f6f7ee;
-    padding: 30px;
-    align-self: stretch;
-  }
-
-  .testimonials cite {
-    color: #691e1e;
-  }
-
-  .testimonials hr {
-    display: none;
-  } */
 }

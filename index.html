@@ -48,7 +48,7 @@
           small and medium sized businesses in Courtenay, Comox, Cumberland and
           all neighbouring towns in the Comox Valley.
         </p>
-        <a class="button" href="about-us">About us</a>
+        <a class="button" href="about-us.html">About us</a>
       </section>
 
       <section class="services">
@@ -78,7 +78,7 @@
             </p>
           </div>
         </div>
-        <a class="button" href="services.html">Learn more...</a>
+        <a class="button" href="services.html">Our services</a>
       </section>
 
       <section class="testimonials">
@@ -99,10 +99,10 @@
             <p>
               <i class="fa fa-quote-left" aria-hidden="true"></i> Nicole and her
               wonderful staff have been doing my taxes for as long as I can
-              remember. They have handled me through three career changes and the
-              end of a marriage. Nicole is always available to give me advice when
-              I need it and she does an amazing job with my taxes. I highly
-              recommend this company.
+              remember. They have handled me through three career changes and
+              the end of a marriage. Nicole is always available to give me
+              advice when I need it and she does an amazing job with my taxes. I
+              highly recommend this company.
               <i class="fa fa-quote-right" aria-hidden="true"></i>
             </p>
             <cite>Roxie Props</cite>
@@ -113,8 +113,8 @@
               <i class="fa fa-quote-left" aria-hidden="true"></i> Such great
               customer service and support. It is an adventure owning your own
               business and with Nicole Cahoon and Team's accounting/ bookkeeping
-              help you're able to make good decisions and have the information and
-              support to strive even higher than you thought possible!
+              help you're able to make good decisions and have the information
+              and support to strive even higher than you thought possible!
               <i class="fa fa-quote-right" aria-hidden="true"></i>
             </p>
             <cite>Christina Roersma</cite>
@@ -142,7 +142,13 @@
 
       <section class="newsletter">
         <h2>Sign up for our newsletter for tax tips!</h2>
-        <!-- Web form will go here -->
+        <form method="post" action="">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" required />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Your Email" required />
+          <input type="submit" value="Submit" />
+        </form>
       </section>
     </main>
 
@@ -174,18 +180,24 @@
             </address>
             <a href="#" target="_blank"
               ><div class="facebook">
-                <img src="images/facebook-logo.png" width="40" alt="Facebook logo" />
+                <img
+                  src="images/facebook-logo.png"
+                  width="40"
+                  alt="Facebook logo"
+                />
                 <p>Follow us on <span>Facebook</span></p>
               </div></a
             >
           </div>
           <nav>
             <ul>
+              <li><a href="index.html">Home</a></li>
               <li><a href="about-us.html">About us</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="resources.html">Resources</a></li>
             </ul>
           </nav>
+          <p class="call">Call us for help with your personal and business taxes</p>
         </div>
       </div>
       <p class="disclaimer wrapper-width">
