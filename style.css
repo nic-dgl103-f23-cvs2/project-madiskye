@@ -32,7 +32,7 @@ h1,
 h2 {
   text-align: center;
 }
- 
+
 h1 {
   font-size: 4.5rem;
 }
@@ -380,6 +380,8 @@ footer .disclaimer {
   margin: 25px auto 0;
 }
 
+/* == ABOUT US */
+
 /* == RESOURCES */
 
 .resources h1 {
@@ -512,7 +514,7 @@ tr:nth-child(even) {
     padding: 4px 8px;
     border-radius: 2px;
   }
-  
+
   .current-page:hover {
     color: initial;
   }
@@ -756,7 +758,6 @@ tr:nth-child(even) {
     text-align: initial;
     padding: 0;
   }
-
 }
 
 @media only screen and (min-width: 1800px) {
