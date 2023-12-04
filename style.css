@@ -641,6 +641,11 @@ tr:nth-child(even) {
       rgb(89, 83, 83),
       rgb(44, 39, 39)
     );
+    padding: 40px 0 80px;
+  }
+
+  .testimonials .wrapper-width {
+    max-width: 60%;
   }
 
   .testimonials h2 {
@@ -659,22 +664,36 @@ tr:nth-child(even) {
   .testimonials .fa-quote-left {
     float: left;
     font-size: 5rem;
-    padding-bottom: 200px;
-    margin-right: 10px;
+    margin-bottom: 150px;
+    margin-right: 20px;
   }
 
   .testimonials p {
     background-color: initial;
+    padding: 0;
   }
 
   .testimonials blockquote {
     background-color: #f6f7ee;
+    padding: 20px;
     border-radius: 5px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .grid-span-2 {
+    grid-column: span 2;
+  }
+
+  .grid-span-2 .fa-quote-left {
+    margin-bottom: 90px;
   }
 
   .testimonials cite {
     color: #151617;
+    align-self: flex-end;
+    padding-right: 40px;
   }
 
   .testimonials hr {
@@ -683,9 +702,9 @@ tr:nth-child(even) {
 
   .testimonials .wrapper-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 50%;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+    /* max-width: 50%; */
   }
 
   .testimonials p {
@@ -738,4 +757,10 @@ tr:nth-child(even) {
     padding: 0;
   }
 
+}
+
+@media only screen and (min-width: 1800px) {
+  .testimonials .wrapper-width {
+    max-width: 50%;
+  }
 }
