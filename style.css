@@ -28,9 +28,13 @@ h3 {
   font-family: "Playfair Display", serif;
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+ 
 h1 {
   font-size: 4.5rem;
-  text-align: center;
 }
 
 p {
@@ -213,10 +217,6 @@ footer .disclaimer {
 }
 
 .hero h2 {
-  text-align: center;
-}
-
-.hero h2 {
   font-weight: 400;
 }
 
@@ -234,11 +234,11 @@ footer .disclaimer {
 
 .services h2 {
   font-size: 3.5rem;
-  text-align: center;
 }
 
 .services h3 {
   font-size: 2.2rem;
+  text-align: initial;
   padding: 10px 0 10px;
 }
 
@@ -275,7 +275,6 @@ footer .disclaimer {
 
 .testimonials h2 {
   font-size: 3.5rem;
-  text-align: center;
 }
 
 .testimonials p {
@@ -322,6 +321,7 @@ footer .disclaimer {
 
 .book-appointment h2 {
   font-size: 2.5rem;
+  text-align: initial;
 }
 
 .book-appointment p {
@@ -352,6 +352,7 @@ footer .disclaimer {
 
 .newsletter h2 {
   font-size: 2.5rem;
+  text-align: initial;
   margin-bottom: 20px;
 }
 
@@ -386,6 +387,10 @@ footer .disclaimer {
 }
 
 /* -- TAX CHECKLIST */
+
+.checklist {
+  padding-bottom: 60px;
+}
 
 .checklist caption {
   font-size: 3rem;
@@ -425,6 +430,44 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color: #dbdbdb;
   color: #151617;
+}
+
+/* -- ADDITIONAL RESOURCES */
+
+.additional-resources {
+  padding-bottom: 80px;
+}
+
+.additional-resources h2 {
+  font-size: 3rem;
+  padding: 10px 0 30px;
+}
+
+.additional-resources span {
+  display: block;
+}
+
+.additional-resources li {
+  padding-bottom: 20px;
+}
+
+.additional-resources ul {
+  background-color: #9b2727;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.additional-resources a {
+  color: #f6f7ee;
+  text-decoration: underline;
+}
+
+.additional-resources a:hover {
+  color: #151617;
+}
+
+.additional-resources i {
+  padding-right: 10px;
 }
 
 /* Large devices (desktops, 1200px and up) */
@@ -496,6 +539,7 @@ tr:nth-child(even) {
   }
 
   footer h2 {
+    text-align: initial;
     margin-top: 0px;
   }
 
@@ -673,6 +717,25 @@ tr:nth-child(even) {
 
   .checklist {
     font-size: 1.8rem;
+  }
+
+  .additional-resources {
+    padding: 40px 0 80px;
+  }
+
+  .additional-resources li {
+    font-size: 1.8rem;
+  }
+
+  .additional-resources div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .additional-resources h2 {
+    font-size: 3.5rem;
+    text-align: initial;
+    padding: 0;
   }
 
 }
