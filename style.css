@@ -30,6 +30,7 @@ h3 {
 
 h1 {
   font-size: 4.5rem;
+  text-align: center;
 }
 
 p {
@@ -59,7 +60,7 @@ a {
   text-align: center;
   display: block;
   max-width: fit-content;
-  padding: 10px 20px 12px;
+  padding: 12px 25px 14px;
   border-radius: 5px;
   margin: auto;
 }
@@ -126,6 +127,7 @@ header li:hover {
   background-color: #f6f7ee;
   color: #151617;
   border-top: 4px solid #a62929;
+  border-bottom: 4px solid #a62929;
 }
 
 footer .wrapper-content {
@@ -210,7 +212,6 @@ footer .disclaimer {
   padding: 30px 0;
 }
 
-.hero h1,
 .hero h2 {
   text-align: center;
 }
@@ -228,11 +229,17 @@ footer .disclaimer {
 /* -- SERVICES */
 
 .services {
-  padding: 15px 0 30px;
+  padding: 50px 0 30px;
 }
 
 .services h2 {
-  font-size: 3.3rem;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.services h3 {
+  font-size: 2.2rem;
+  padding: 10px 0 10px;
 }
 
 .services p {
@@ -240,14 +247,24 @@ footer .disclaimer {
 }
 
 .services .wrapper-content {
-  margin: 30px 0;
+  margin: 30px 0 60px;
 }
 
 .services .wrapper-item {
-  padding-left: 12px;
-  border-left: 50px solid #a62929;
-  border-radius: 10px;
-  margin: 12px 0;
+  margin: 20px 0 40px;
+  clear: both;
+}
+
+.services i {
+  color: #a62929;
+  font-size: 5rem;
+  float: left;
+  padding-bottom: 140px;
+  margin-right: 15px;
+}
+
+.services .item-1 {
+  padding-bottom: 110px;
 }
 
 /* -- TESTIMONIALS */
@@ -257,7 +274,8 @@ footer .disclaimer {
 }
 
 .testimonials h2 {
-  font-size: 3.3rem;
+  font-size: 3.5rem;
+  text-align: center;
 }
 
 .testimonials p {
@@ -285,9 +303,11 @@ footer .disclaimer {
   margin: 20px;
 }
 
-/* -- CALL TO ACTION */
+.testimonials .desktop {
+  display: none;
+}
 
-/* book appointment */
+/* -- BOOK APPOINTMENT */
 
 .book-appointment {
   background: linear-gradient(
@@ -321,7 +341,7 @@ footer .disclaimer {
   font-size: 1.8rem;
 }
 
-/* newsletter */
+/* -- NEWSLETTER */
 
 .newsletter {
   padding: 20px 18px 15px;
@@ -361,11 +381,50 @@ footer .disclaimer {
 
 /* == RESOURCES */
 
+.resources h1 {
+  padding: 40px 0 60px;
+}
+
 /* -- TAX CHECKLIST */
+
+.checklist caption {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 20px;
+}
+
+table {
+  margin-bottom: 25px;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+
+.checklist i {
+  font-size: 2rem;
+  color: #9b2727;
+  margin-right: 5px;
+}
 
 th {
   background-color: #9b2727;
+  color: #f6f7ee;
   text-align: initial;
+  font-weight: 600;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f6f7ee;
+  color: #151617;
+}
+
+tr:nth-child(even) {
+  background-color: #dbdbdb;
+  color: #151617;
 }
 
 /* Large devices (desktops, 1200px and up) */
@@ -400,6 +459,10 @@ th {
     display: none;
   }
 
+  header a {
+    padding: 4px 8px;
+  }
+
   .current-page {
     background-color: #f6f7ee;
     color: #151617;
@@ -417,7 +480,7 @@ th {
     display: flex;
     align-items: start;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 30px 0 20px;
   }
 
   footer .wrapper-logos {
@@ -448,7 +511,7 @@ th {
     border-radius: 5px;
     padding: 10px 0 10px 20px;
     display: initial;
-    margin: 20px 0 0 50px;
+    margin-left: 50px;
   }
 
   footer .wrapper-contact {
@@ -469,7 +532,7 @@ th {
 
   footer nav {
     padding: 0 30px 0 10px;
-    margin-top: 20px;
+    margin-top: 5px;
     border-left: solid 2px #585252;
   }
 
@@ -497,19 +560,23 @@ th {
   /* -- SERVICES */
 
   .services {
-    max-width: 80%;
+    max-width: 90%;
+    padding: 50px 0 60px;
     margin: auto;
   }
 
   .services h2 {
     font-size: 4rem;
-    text-align: center;
-    padding: 30px 0 10px;
+  }
+
+  .services h3 {
+    padding: 10px 0;
   }
 
   .services .wrapper-content {
     display: flex;
     gap: 8%;
+    margin: 30px 0;
   }
 
   .services .wrapper-item {
@@ -519,9 +586,93 @@ th {
 
   .services i {
     font-size: 5rem;
-    color: #a62929;
   }
 
   /* -- TESTIMONIALS */
+
+  .testimonials {
+    background-color: rgb(89, 83, 83);
+    background: linear-gradient(
+      to right bottom,
+      rgb(89, 83, 83),
+      rgb(44, 39, 39)
+    );
+  }
+
+  .testimonials h2 {
+    font-size: 4rem;
+    padding: 20px 0 40px;
+  }
+
+  .testimonials .desktop {
+    display: initial;
+  }
+
+  .testimonials .fa-quote-right {
+    display: none;
+  }
+
+  .testimonials .fa-quote-left {
+    float: left;
+    font-size: 5rem;
+    padding-bottom: 200px;
+    margin-right: 10px;
+  }
+
+  .testimonials p {
+    background-color: initial;
+  }
+
+  .testimonials blockquote {
+    background-color: #f6f7ee;
+    border-radius: 5px;
+    margin: auto;
+  }
+
+  .testimonials cite {
+    color: #151617;
+  }
+
+  .testimonials hr {
+    display: none;
+  }
+
+  .testimonials .wrapper-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 50%;
+  }
+
+  .testimonials p {
+    margin: 0;
+  }
+
+  /* -- BOOK APPOINTMENT */
+
+  .newsletter,
+  .book-appointment {
+    max-width: 600px;
+  }
+
+  .book-appointment {
+    margin: 80px 0 100px 100px;
+  }
+
+  .newsletter {
+    margin: 0 0 75px 450px;
+  }
+
+  .book-appointment p {
+    padding-bottom: 50px;
+    padding-top: 30px;
+    max-width: 70%;
+  }
+
+  /* == RESOURCES */
+
+  .checklist {
+    font-size: 1.8rem;
+  }
 
 }

@@ -39,8 +39,8 @@
       </nav>
     </header>
 
-    <main class="wrapper-width">
-      <section class="hero">
+    <main>
+      <section class="hero wrapper-width">
         <h1>Nicole Cahoon</h1>
         <h2>Chartered Professional Accountant</h2>
         <p>
@@ -51,10 +51,11 @@
         <a class="button" href="about-us.html">About us</a>
       </section>
 
-      <section class="services">
+      <section class="services wrapper-width">
         <h2>Services</h2>
         <div class="wrapper-content">
           <div class="wrapper-item">
+            <i class="fa fa-square item-1" aria-hidden="true"></i>
             <h3>Accounting Services</h3>
             <p>
               We provide constructive solutions for maximizing your company's
@@ -62,19 +63,21 @@
             </p>
           </div>
           <div class="wrapper-item">
-            <h3>Business Consultations</h3>
-            <p>
-              We can help your Comox Valley business identify areas that are
-              affecting profitability and growth and we can develop solutions
-              that are right for you.
-            </p>
-          </div>
-          <div class="wrapper-item">
+            <i class="fa fa-square" aria-hidden="true"></i>
             <h3>Tax Services</h3>
             <p>
               We can develop tax-minimization strategies for small and medium
               sized Comox Valley businesses as well as personal, to optimize
               your after-tax position.
+            </p>
+          </div>
+          <div class="wrapper-item">
+            <i class="fa fa-square" aria-hidden="true"></i>
+            <h3>Business Consultations</h3>
+            <p>
+              We can help your business identify areas that are affecting
+              profitability and growth and we can develop solutions that are
+              right for you.
             </p>
           </div>
         </div>
@@ -83,7 +86,7 @@
 
       <section class="testimonials">
         <h2>Reviews</h2>
-        <div class="wrapper-content">
+        <div class="wrapper-content wrapper-width">
           <blockquote>
             <p>
               <i class="fa fa-quote-left" aria-hidden="true"></i> Thank you to
@@ -92,7 +95,7 @@
               efficient. Highly recommend this office!
               <i class="fa fa-quote-right" aria-hidden="true"></i>
             </p>
-            <cite>Janine Swanson</cite>
+            <cite><span class="desktop">&mdash; </span>Janine Swanson</cite>
           </blockquote>
           <hr />
           <blockquote>
@@ -105,7 +108,7 @@
               highly recommend this company.
               <i class="fa fa-quote-right" aria-hidden="true"></i>
             </p>
-            <cite>Roxie Props</cite>
+            <cite><span class="desktop">&mdash; </span>Roxie Props</cite>
           </blockquote>
           <hr />
           <blockquote>
@@ -117,46 +120,65 @@
               and support to strive even higher than you thought possible!
               <i class="fa fa-quote-right" aria-hidden="true"></i>
             </p>
-            <cite>Christina Roersma</cite>
+            <cite><span class="desktop">&mdash; </span>Christina Roersma</cite>
+          </blockquote>
+          <hr />
+          <blockquote>
+            <p>
+              <i class="fa fa-quote-left" aria-hidden="true"></i> Nicole and her
+              team have been so helpful with mine and my husband's taxes.
+              Between a business, a rental property, and any other questions
+              we've had, she's made our paperwork confusion clearer and
+              smoother. Not only has she helped us sort out any issues or
+              questions we've had, she's also been proactive in making
+              suggestions on how to improve things that hadn't even occurred to
+              us. We will certainly be using her services for years to come!
+              <i class="fa fa-quote-right" aria-hidden="true"></i>
+            </p>
+            <cite><span class="desktop">&mdash; </span>Heather Green</cite>
           </blockquote>
           <hr />
         </div>
       </section>
 
-      <section class="book-appointment">
-        <h2>Book an appointment</h2>
-        <p>
-          For more information, or to book an appointment, call our office
-          today!
-        </p>
-        <address>
-          <a href="tel:"
-            ><i class="fa fa-phone" aria-hidden="true"></i> 250-871-1121</a
-          >
-          <a href="mailto:"
-            ><i class="fa fa-envelope" aria-hidden="true"></i>
-            nicole@nicolecahoon.com</a
-          >
-        </address>
+      <section class="wrapper-width">
+        <div class="book-appointment">
+          <h2>Book an appointment</h2>
+          <p>
+            For more information, or to book an appointment, call our office
+            today!
+          </p>
+          <address>
+            <a href="tel:"
+              ><i class="fa fa-phone" aria-hidden="true"></i> 250-871-1121</a
+            >
+            <a href="mailto:"
+              ><i class="fa fa-envelope" aria-hidden="true"></i>
+              nicole@nicolecahoon.com</a
+            >
+          </address>
+        </div>
       </section>
 
-      <section class="newsletter">
-        <h2>Sign up for our newsletter for tax tips!</h2>
-        <form method="post" action="">
-          <div class="form-input">
-            <label for="fname">First Name</label>
-            <input type="text" name="firstname" id="fname" required />
-          </div>
-          <div class="form-input">
-            <label for="lname">Last Name</label>
-            <input type="text" name="lastname" id="lname" required />
-          </div>
-          <div class="form-input">
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" required />
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
+      <section class="wrapper-width">
+        <div class="newsletter">
+          <h2>Sign up for our newsletter for tax tips!</h2>
+          <form method="post" action="">
+            <div class="form-input">
+              <label for="fname">First Name</label>
+              <input type="text" name="firstname" id="fname" required />
+            </div>
+            <div class="form-input">
+              <label for="lname">Last Name</label>
+              <input type="text" name="lastname" id="lname" required />
+            </div>
+            <div class="form-input">
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" required />
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
