@@ -394,21 +394,6 @@ strong {
   font-weight: 700;
 }
 
-.where-we-are {
-  padding: 70px 0;
-}
-
-.where-we-are iframe {
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-}
-
-.where-we-are h2 {
-  font-size: 3.5rem;
-  padding-bottom: 40px;
-}
-
 /* -- OUR TEAM */
 
 .our-team h2 {
@@ -418,7 +403,7 @@ strong {
 
 .our-team h3 {
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   padding: 40px 0 20px;
   text-align: center;
 }
@@ -437,6 +422,23 @@ strong {
 
 .our-team p:first-child {
   padding-bottom: 20px;
+}
+
+/* -- WHERE WE ARE */
+
+.where-we-are {
+  padding: 70px 0;
+}
+
+.where-we-are iframe {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.where-we-are h2 {
+  font-size: 3.5rem;
+  padding-bottom: 40px;
 }
 
 /* == RESOURCES */
@@ -460,7 +462,6 @@ strong {
 table {
   margin-bottom: 25px;
   border-collapse: collapse;
-  border-radius: 5px;
 }
 
 .checklist i {
@@ -499,7 +500,7 @@ tr:nth-child(even) {
 
 .additional-resources h2 {
   font-size: 3rem;
-  padding: 10px 0 30px;
+  padding: 20px 0 20px;
 }
 
 .additional-resources span {
@@ -763,7 +764,6 @@ tr:nth-child(even) {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 40px;
-    /* max-width: 50%; */
   }
 
   .testimonials p {
@@ -772,8 +772,8 @@ tr:nth-child(even) {
 
   /* -- BOOK APPOINTMENT */
 
-  .newsletter,
-  .book-appointment {
+  .book-appointment,
+  .newsletter {
     max-width: 600px;
   }
 
@@ -781,14 +781,14 @@ tr:nth-child(even) {
     margin: 80px 0 100px 100px;
   }
 
-  .newsletter {
-    margin: 0 0 75px 450px;
-  }
-
   .book-appointment p {
     padding-bottom: 50px;
     padding-top: 30px;
     max-width: 70%;
+  }
+
+  .newsletter {
+    margin: 0 0 75px 450px;
   }
 
   /* == ABOUT US */
@@ -798,6 +798,53 @@ tr:nth-child(even) {
     margin: auto;
   }
 
+  /* -- OUR TEAM */
+
+  .our-team h2 {
+    padding: 80px 0 20px;
+  }
+
+  .our-team h3 {
+    padding: 20px 0;
+  }
+
+  .our-team ul {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .our-team li {
+    flex-basis: 40%;
+  }
+
+  .our-team .bio {
+    border: none;
+    padding: 0;
+  }
+
+  /* -- WHERE WE ARE */
+
+  .where-we-are {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0;
+  }
+
+  .where-we-are h2 {
+    font-size: 4rem
+  }
+
+  .where-we-are hr {
+    color: #a62929;
+    width: 50%;
+  }
+
+  .where-we-are iframe {
+    flex-basis: 40%;
+  }
+
   /* == RESOURCES */
 
   .checklist {
@@ -805,7 +852,7 @@ tr:nth-child(even) {
   }
 
   .additional-resources {
-    padding: 40px 0 80px;
+    padding: 50px 0 100px;
   }
 
   .additional-resources li {
