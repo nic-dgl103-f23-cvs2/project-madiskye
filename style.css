@@ -116,7 +116,7 @@ header a {
 }
 
 header li:hover {
-  color: #e15d5d;
+  color: #E88787;
 }
 
 .show-items {
@@ -381,6 +381,63 @@ footer .disclaimer {
 }
 
 /* == ABOUT US */
+
+.about-us-hero h1 {
+  padding: 40px 0;
+}
+
+.about-us-hero p {
+  padding-bottom: 20px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.where-we-are {
+  padding: 70px 0;
+}
+
+.where-we-are iframe {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.where-we-are h2 {
+  font-size: 3.5rem;
+  padding-bottom: 40px;
+}
+
+/* -- OUR TEAM */
+
+.our-team h2 {
+  font-size: 3.5rem;
+  padding-top: 40px;
+}
+
+.our-team h3 {
+  font-style: normal;
+  font-size: 2.5rem;
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.our-team img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.our-team .bio {
+  font-style: normal;
+  border-left: 2px #a62929 solid;
+  padding-left: 10px;
+  margin: 14px 0;
+}
+
+.our-team p:first-child {
+  padding-bottom: 20px;
+}
 
 /* == RESOURCES */
 
@@ -732,6 +789,13 @@ tr:nth-child(even) {
     padding-bottom: 50px;
     padding-top: 30px;
     max-width: 70%;
+  }
+
+  /* == ABOUT US */
+
+  .about-us-hero p {
+    max-width: 60%;
+    margin: auto;
   }
 
   /* == RESOURCES */
