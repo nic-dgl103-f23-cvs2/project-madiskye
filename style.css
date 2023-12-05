@@ -57,6 +57,10 @@ a {
   text-decoration: none;
 }
 
+a.logo {
+  padding: 0;
+}
+
 .button {
   background-color: #a62929;
   color: #f6f7ee;
@@ -67,6 +71,9 @@ a {
   padding: 12px 25px 14px;
   border-radius: 5px;
   margin: auto;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
 }
 
 .button:hover {
@@ -79,6 +86,9 @@ address a {
   font-style: normal;
   line-height: 3.9rem;
   display: block;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
 }
 
 address a:hover {
@@ -110,13 +120,13 @@ header li {
   padding: 10px 0;
 }
 
+header li:hover {
+  color: #e88787;
+}
+
 header a {
   color: inherit;
   font-weight: 300;
-}
-
-header li:hover {
-  color: #E88787;
 }
 
 .show-items {
@@ -339,6 +349,14 @@ footer .disclaimer {
   border-radius: 5px;
   max-width: fit-content;
   margin: 20px auto 10px;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.newsletter input[type="submit"]:hover {
+  background-color: #f6f7ee;
+  color: #151617;
 }
 
 /* == ABOUT US */
@@ -401,6 +419,8 @@ strong {
   font-size: 3.5rem;
   padding-bottom: 40px;
 }
+
+/* == SERVICES */
 
 /* == RESOURCES */
 
@@ -729,7 +749,7 @@ tr:nth-child(even) {
   }
 
   .book-appointment .wrapper-text {
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .book-appointment span {
@@ -799,7 +819,7 @@ tr:nth-child(even) {
   }
 
   .where-we-are h2 {
-    font-size: 4rem
+    font-size: 4rem;
   }
 
   .where-we-are hr {
@@ -810,6 +830,8 @@ tr:nth-child(even) {
   .where-we-are iframe {
     flex-basis: 40%;
   }
+
+  /* == SERVICES */
 
   /* == RESOURCES */
 
