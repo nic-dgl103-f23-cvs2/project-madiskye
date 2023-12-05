@@ -130,12 +130,12 @@ header li:hover {
 .footer {
   background-color: #f6f7ee;
   color: #151617;
-  border-top: 4px solid #a62929;
+  border-top: 6px solid #a62929;
   border-bottom: 4px solid #a62929;
 }
 
 footer .wrapper-content {
-  padding: 20px 0;
+  padding: 20px 10px 10px;
 }
 
 footer .wrapper-logos {
@@ -147,47 +147,13 @@ footer .wrapper-logos {
   align-self: end;
 }
 
-footer .wrapper-contact {
+footer nav {
+  padding-top: 50px;
   text-align: center;
-  padding: 10px 0;
-}
-
-footer h2 {
-  color: #151617;
-  font-weight: 600;
-  margin: 18px 0 9px;
-}
-
-.facebook {
-  background-color: #151617;
-  color: #f6f7ee;
-  font-size: 1.4rem;
-  text-align: initial;
-  display: flex;
-  align-items: end;
-  width: fit-content;
-  padding: 7px 10px 12px;
-  border-radius: 5px;
-  margin: 20px auto;
-}
-
-.facebook img {
-  margin-right: 10px;
-}
-
-.facebook span {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-footer ul {
-  text-align: center;
-  justify-content: space-around;
 }
 
 footer li {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 footer li a {
@@ -197,10 +163,6 @@ footer li a {
 
 footer li a:hover {
   color: #151617;
-}
-
-footer .call {
-  display: none;
 }
 
 footer .disclaimer {
@@ -580,67 +542,27 @@ tr:nth-child(even) {
 
   footer .wrapper-content {
     display: flex;
-    align-items: start;
     justify-content: space-between;
-    padding: 30px 0 20px;
+    align-items: center;
+    padding: 20px 0 25px;
   }
 
   footer .wrapper-logos {
-    flex-direction: column;
-    align-items: start;
+    justify-content: flex-start;
     gap: 50px;
-    padding-top: 10px;
   }
 
-  footer .wrapper-logos img {
-    align-self: center;
-    width: 160px;
-  }
-
-  footer h2 {
-    text-align: initial;
-    margin-top: 0px;
-  }
-
-  footer .call {
-    background-image: url(images/Untitled-1.png);
-    background-size: contain;
-    max-width: 20%;
-    font-size: 2rem;
-    line-height: 4rem;
-    font-weight: 600;
-    background-color: #151617;
-    color: #f6f7ee;
-    border-radius: 5px;
-    padding: 10px 0 10px 20px;
-    display: initial;
-    margin-left: 50px;
-  }
-
-  footer .wrapper-contact {
-    text-align: initial;
-    padding: 0 20px 0 50px;
-  }
-
-  footer .facebook {
-    margin-left: 0;
+  footer nav {
+    padding: 0;
   }
 
   footer ul {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
-    text-align: initial;
-  }
-
-  footer nav {
-    padding: 0 30px 0 10px;
-    margin-top: 5px;
-    border-left: solid 2px #585252;
+    gap: 50px;
   }
 
   footer li {
-    margin-bottom: 0px;
+    margin: 0;
   }
 
   /* == HOMEPAGE */
@@ -817,8 +739,9 @@ tr:nth-child(even) {
   /* -- NEWSLETTER */
 
   .newsletter {
+    width: 70%;
     padding: 40px 40px 20px;
-    margin: 20px auto 100px;
+    margin: 20px auto 90px;
   }
 
   .newsletter h2 {
