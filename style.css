@@ -374,10 +374,9 @@ footer .disclaimer {
   color: #f6f7ee;
   font-size: 1.6rem;
   padding: 10px 30px;
-  border: 0;
   border-radius: 5px;
   max-width: fit-content;
-  margin: 25px auto 0;
+  margin: 20px auto 10px;
 }
 
 /* == ABOUT US */
@@ -765,6 +764,8 @@ tr:nth-child(even) {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 40px;
+    position: relative;
+    right: 20px;
   }
 
   .testimonials p {
@@ -777,7 +778,7 @@ tr:nth-child(even) {
     background: linear-gradient(#151617, #151617);
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 100px 0;
   }
 
   .book-appointment address {
@@ -792,8 +793,12 @@ tr:nth-child(even) {
 
   .book-appointment a,
   .book-appointment i {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 10px 0;
+  }
+
+  .book-appointment i {
+    margin-right: 10px;
   }
 
   .book-appointment h2 {
@@ -802,7 +807,7 @@ tr:nth-child(even) {
   }
 
   .book-appointment .wrapper-text {
-    padding-left: 50px;
+    padding-left: 20px;
   }
 
   .book-appointment span {
@@ -812,7 +817,17 @@ tr:nth-child(even) {
   /* -- NEWSLETTER */
 
   .newsletter {
-    margin: 0 0 75px 450px;
+    padding: 40px 40px 20px;
+    margin: 20px auto 100px;
+  }
+
+  .newsletter h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .newsletter input[type="submit"] {
+    padding: 12px 50px;
   }
 
   /* == ABOUT US */
@@ -902,6 +917,8 @@ tr:nth-child(even) {
     padding: 0;
   }
 }
+
+/* Adjust testimonials content block on homepage for a wider viewport */
 
 @media only screen and (min-width: 1800px) {
   .testimonials .wrapper-width {
