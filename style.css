@@ -422,6 +422,61 @@ strong {
 
 /* == SERVICES */
 
+.services-page h1 {
+  padding: 40px;
+}
+
+.services-page .service-description {
+  padding-bottom: 30px;
+}
+
+.services-page h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.services-page p {
+  padding-bottom: 20px;
+}
+
+.services-page .summary {
+  max-width: 88%;
+  margin: auto;
+}
+
+.services-page i {
+  color: #9b2727;
+  margin-right: 5px;
+}
+
+.services-page .book-appointment h2 {
+  font-size: 2.5rem;
+  line-height: 3.7rem;
+}
+
+.services-page h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 3rem;
+}
+
+.services-page hr {
+  color: #a62929;
+  width: 50%;
+  margin: 0 auto 20px;
+}
+
+.services-page ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.services-page li {
+  line-height: 3rem;
+  font-style: normal;
+}
+
 /* == RESOURCES */
 
 .resources h1 {
