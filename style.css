@@ -430,6 +430,10 @@ strong {
   padding-bottom: 30px;
 }
 
+.services-page .service-description:nth-child(3) {
+  padding-bottom: 50px;
+}
+
 .services-page h2 {
   font-size: 3rem;
   padding-bottom: 20px;
@@ -440,8 +444,7 @@ strong {
 }
 
 .services-page .summary {
-  max-width: 88%;
-  margin: auto;
+  text-align: center;
 }
 
 .services-page i {
@@ -467,13 +470,13 @@ strong {
 }
 
 .services-page ul {
-  padding-left: 20px;
   list-style-type: disc;
+  padding-left: 20px;
   margin-left: 20px;
 }
 
 .services-page li {
-  line-height: 3rem;
+  line-height: 3.5rem;
   font-style: normal;
 }
 
@@ -776,10 +779,11 @@ tr:nth-child(even) {
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
+    max-width: 68%;
   }
 
   .book-appointment address {
-    width: 40%;
+    width: 25%;
     padding-left: 40px;
   }
 
@@ -804,7 +808,7 @@ tr:nth-child(even) {
   }
 
   .book-appointment .wrapper-text {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   .book-appointment span {
@@ -888,6 +892,66 @@ tr:nth-child(even) {
 
   /* == SERVICES */
 
+  .services-page h1 {
+    padding: 60px 0;
+  }
+
+  .service-description {
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    gap: 80px;
+  }
+
+  .services-page .summary {
+    padding-bottom: 30px;
+  }
+
+  .service-info-accounting {
+    max-width: 50%;
+  }
+
+  .service-description h2,
+  .service-description h3 {
+    text-align: initial;
+  }
+
+  .services-page hr {
+    margin: 20px 0;
+    width: 200px;
+  }
+
+  .services-page .service p {
+    text-align: initial;
+  }
+
+  .services-page .service {
+    max-width: 40%;
+  }
+
+  .services-page .service-description {
+    padding-bottom: 80px;
+  }
+
+  .services-page .service-description:nth-child(3) {
+    padding-bottom: 100px;
+  }
+
+  .services-page .service-info {
+    padding-top: 95px;
+  }
+
+  .services-page .book-appointment {
+    padding-top: 60px;
+    margin: auto;
+    gap: 100px;
+  }
+
+  .services-page .book-appointment h2 {
+    max-width: 50%;
+  }
+
   /* == RESOURCES */
 
   .resources h1 {
@@ -918,10 +982,30 @@ tr:nth-child(even) {
   }
 }
 
-/* Adjust testimonials content block on homepage for a wider viewport */
+/* Adjust some content for a wider viewport */
 
 @media only screen and (min-width: 1800px) {
   .testimonials .wrapper-width {
     max-width: 50%;
+  }
+
+  .book-appointment {
+    max-width: 55%;
+  }
+
+  .book-appointment address {
+    width: 25%;
+  }
+
+  .book-appointment .wrapper-text {
+    padding-left: 10px;
+  }
+
+  .service-description {
+    max-width: 40%;
+  }
+
+  .services-page .book-appointment {
+    max-width: 53%;
   }
 }
