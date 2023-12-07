@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/browser-tab-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Services</title>
+  </head>
+
+  <body>
+    <header class="wrapper-width">
+      <div class="wrapper-nav">
+        <a class="logo" href="index.html"
+          ><img
+            src="images/nicole-cahoon-logo-white.png"
+            width="150"
+            alt="Nicole Cahoon logo"
+        /></a>
+        <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+      </div>
+      <nav>
+        <ul id="nav-items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a class="current-page" href="services.html">Services</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="services-page">
+      <h1>Services</h1>
+
+      <section class="service-description wrapper-width">
+        <div class="service">
+          <h2>Accounting services</h2>
+          <hr />
+          <p class="summary">
+            We provide constructive solutions for maximizing your company's
+            profitability.
+          </p>
+        </div>
+        <div class="service-info-accounting">
+          <h3>
+            <i class="fa fa-square" aria-hidden="true"></i> Corporate year ends
+            &mdash; financial statements preparation
+          </h3>
+          <p>
+            We can prepare your financial statements in accordance with
+            professional standards, but express no opinion or any other form of
+            assurance on the underlying information included in them. The
+            financial statements produced are a useful tool for making financial
+            decisions.
+          </p>
+          <h3>
+            <i class="fa fa-square" aria-hidden="true"></i> Cash flow analysis
+          </h3>
+          <p>
+            We can evaluate your company's financial position, estimate
+            financing requirements, and track cash-flow sources.
+          </p>
+          <h3>
+            <i class="fa fa-square" aria-hidden="true"></i> Bookkeeping services
+          </h3>
+          <p>
+            We can organize your financial records to ensure that your small or
+            midsized business operates efficiently, which is the basis of
+            successful business.
+          </p>
+        </div>
+      </section>
+
+      <section class="service-description wrapper-width">
+        <div class="service">
+          <h2>Tax services</h2>
+          <hr />
+          <p>
+            Here at Nicole Cahoon CPA we can develop tax-minimization strategies
+            to optimize our Comox Valley and North Island clients after-tax
+            position.
+          </p>
+          <p>We specialize and offer many services including:</p>
+        </div>
+        <div class="service-info">
+          <ul>
+            <li>Personal and Corporate Tax Returns</li>
+            <li>Tax planning</li>
+            <li>Estate planning</li>
+            <li>Family trusts</li>
+            <li>Tax compliance</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="service-description wrapper-width">
+        <div class="service">
+          <h2>Business consulting</h2>
+          <hr />
+          <p>
+            We can help your business identify areas that affecting
+            profitability and growth and we can develop solutions. In addition
+            to working with management, we provide strategies that address the
+            issues affecting your business. Some of the consulting services we
+            offer include:
+          </p>
+        </div>
+        <div class="service-info">
+          <ul>
+            <li>Business Valuation</li>
+            <li>Business succession planning</li>
+            <li>Mergers and aquisitions</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="book-appointment">
+        <h2>
+          For more information about our services, call or email us today!
+        </h2>
+        <address>
+          <a href="tel:#"
+            ><i class="fa fa-phone" aria-hidden="true"></i> 250-871-1121</a
+          >
+          <a href="mailto:#"
+            ><i class="fa fa-envelope" aria-hidden="true"></i>
+            nicole@nicolecahoon.com</a
+          >
+        </address>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="wrapper-content wrapper-width">
+          <div class="wrapper-logos">
+            <img
+              width="140"
+              src="images/nicole-cahoon-logo.png"
+              alt="Nicole Cahoon logo"
+            />
+            <img
+              width="120"
+              src="images/cpa-logo.png"
+              alt="Chartered Professional Accountants logo"
+            />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <p class="disclaimer wrapper-width">
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.
+      </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1015 @@
+/* == GENERAL */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #151617;
+  color: #f6f7ee;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper-width {
+  margin: 0 5%;
+}
+
+/* -- TYPOGRAPHY */
+
+h1,
+h2,
+h3 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+p {
+  font-weight: 300;
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+}
+
+b {
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.logo {
+  padding: 0;
+}
+
+.button {
+  background-color: #a62929;
+  color: #f6f7ee;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  max-width: fit-content;
+  padding: 12px 25px 14px;
+  border-radius: 5px;
+  margin: auto;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.button:hover {
+  background-color: #f6f7ee;
+  color: #151617;
+}
+
+address a {
+  color: #9b2727;
+  font-style: normal;
+  line-height: 3.9rem;
+  display: block;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+address a:hover {
+  color: #151617;
+}
+
+/* == SITEWIDE */
+
+/* -- HEADER */
+
+header {
+  padding: 15px 1% 12px 0;
+}
+
+header .wrapper-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 150px;
+}
+
+header ul {
+  display: none;
+}
+
+header li {
+  padding: 10px 0;
+}
+
+header li:hover {
+  color: #e88787;
+}
+
+header a {
+  color: inherit;
+  font-weight: 300;
+}
+
+.show-items {
+  display: initial;
+  text-align: right;
+  padding: 0;
+}
+
+/* -- FOOTER */
+
+.footer {
+  background-color: #f6f7ee;
+  color: #151617;
+  border-top: 6px solid #a62929;
+  border-bottom: 4px solid #a62929;
+}
+
+footer .wrapper-content {
+  padding: 20px 10px 10px;
+}
+
+footer .wrapper-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-logos img {
+  align-self: end;
+}
+
+footer nav {
+  padding-top: 50px;
+  text-align: center;
+}
+
+footer li {
+  margin-bottom: 40px;
+}
+
+footer li a {
+  color: #9b2727;
+  font-size: 1.8rem;
+}
+
+footer li a:hover {
+  color: #151617;
+}
+
+footer .disclaimer {
+  font-style: italic;
+  padding: 20px 0;
+}
+
+/* == HOMEPAGE */
+
+/* -- HERO */
+
+.hero {
+  padding: 30px 0;
+}
+
+.hero h2 {
+  font-weight: 400;
+}
+
+.hero p {
+  max-width: 80%;
+  margin: 20px auto;
+  line-height: 2.5rem;
+}
+
+/* -- SERVICES */
+
+.services {
+  padding: 40px 0;
+}
+
+.services h2 {
+  font-size: 3.5rem;
+}
+
+.services h3 {
+  font-size: 2.2rem;
+  text-align: initial;
+  padding: 10px 0 10px;
+}
+
+.services p {
+  margin-top: 7px;
+}
+
+.services .wrapper-content {
+  margin: 30px 0 50px;
+}
+
+.services .wrapper-item {
+  margin: 20px 0 30px;
+  clear: both;
+}
+
+.services i {
+  color: #a62929;
+  font-size: 5rem;
+  float: left;
+  padding-bottom: 120px;
+  margin-right: 15px;
+}
+
+.services .item-1 {
+  padding-bottom: 110px;
+}
+
+/* -- TESTIMONIALS */
+
+.testimonials {
+  padding: 30px 0 10px;
+}
+
+.testimonials h2 {
+  font-size: 3.5rem;
+}
+
+.testimonials p {
+  background-color: #f6f7ee;
+  color: #151617;
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 25px 0 10px;
+}
+
+.testimonials i {
+  color: #9b2727;
+}
+
+.testimonials cite {
+  font-weight: 600;
+  font-style: normal;
+  padding-left: 20px;
+}
+
+.testimonials hr {
+  color: #a62929;
+  max-width: 50%;
+  margin: 20px;
+}
+
+.testimonials .desktop {
+  display: none;
+}
+
+/* -- BOOK APPOINTMENT */
+
+.book-appointment {
+  background: linear-gradient(
+    to right bottom,
+    rgb(89, 83, 83),
+    rgb(44, 39, 39)
+  );
+  padding: 20px 18px;
+  border-radius: 5px;
+  margin: 30px 5% 70px;
+}
+
+.book-appointment h2 {
+  font-size: 2.5rem;
+  text-align: initial;
+}
+
+.book-appointment p {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  margin: 10px 0 20px;
+}
+
+.book-appointment address {
+  background-color: #f6f7ee;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.book-appointment a {
+  font-size: 1.8rem;
+}
+
+/* -- NEWSLETTER */
+
+.newsletter {
+  padding: 20px 18px 15px;
+  border: solid 2px #a62929;
+  border-radius: 5px;
+  margin: 60px 0 70px;
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  text-align: initial;
+  margin-bottom: 20px;
+}
+
+.newsletter input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  margin: 5px 0;
+}
+
+.newsletter .form-input {
+  padding: 5px 0;
+}
+
+.newsletter input[type="submit"] {
+  background-color: #9b2727;
+  color: #f6f7ee;
+  font-size: 1.6rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  max-width: fit-content;
+  margin: 20px auto 10px;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.newsletter input[type="submit"]:hover {
+  background-color: #f6f7ee;
+  color: #151617;
+}
+
+/* == ABOUT US */
+
+.about-us-hero h1 {
+  padding: 40px 0;
+}
+
+.about-us-hero p {
+  padding-bottom: 20px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* -- OUR TEAM */
+
+.our-team h2 {
+  font-size: 3.5rem;
+  padding-top: 40px;
+}
+
+.our-team h3 {
+  font-style: normal;
+  font-size: 2.8rem;
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.our-team img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.our-team .bio {
+  font-style: normal;
+  border-left: 2px #a62929 solid;
+  padding-left: 10px;
+  margin: 14px 0;
+}
+
+.our-team p:first-child {
+  padding-bottom: 20px;
+}
+
+/* -- WHERE WE ARE */
+
+.where-we-are {
+  padding: 70px 0;
+}
+
+.where-we-are iframe {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.where-we-are h2 {
+  font-size: 3.5rem;
+  padding-bottom: 40px;
+}
+
+/* == SERVICES */
+
+.services-page h1 {
+  padding: 40px;
+}
+
+.services-page .service-description {
+  padding-bottom: 30px;
+}
+
+.services-page .service-description:nth-child(3) {
+  padding-bottom: 50px;
+}
+
+.services-page h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.services-page p {
+  padding-bottom: 20px;
+}
+
+.services-page .summary {
+  text-align: center;
+}
+
+.services-page i {
+  color: #9b2727;
+  margin-right: 5px;
+}
+
+.services-page .book-appointment h2 {
+  font-size: 2.5rem;
+  line-height: 3.7rem;
+}
+
+.services-page h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 3rem;
+}
+
+.services-page hr {
+  color: #a62929;
+  width: 50%;
+  margin: 0 auto 20px;
+}
+
+.services-page ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.services-page li {
+  line-height: 3.5rem;
+  font-style: normal;
+}
+
+/* == RESOURCES */
+
+.resources h1 {
+  padding: 40px 0 60px;
+}
+
+.resources h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+/* -- TAX CHECKLIST */
+
+.checklist {
+  padding-bottom: 60px;
+}
+
+.checklist caption {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 20px;
+}
+
+table {
+  margin-bottom: 25px;
+  border-collapse: collapse;
+}
+
+.checklist i {
+  font-size: 2rem;
+  color: #9b2727;
+  margin-right: 5px;
+}
+
+th {
+  background-color: #9b2727;
+  color: #f6f7ee;
+  text-align: initial;
+  font-weight: 600;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f6f7ee;
+  color: #151617;
+}
+
+tr:nth-child(even) {
+  background-color: #dbdbdb;
+  color: #151617;
+}
+
+/* -- ADDITIONAL RESOURCES */
+
+.additional-resources h2 {
+  padding-top: 20px;
+}
+
+.additional-resources {
+  padding-bottom: 80px;
+}
+
+.additional-resources span {
+  display: block;
+}
+
+.additional-resources li {
+  padding-bottom: 20px;
+}
+
+.additional-resources ul {
+  background-color: #9b2727;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.additional-resources a {
+  color: #f6f7ee;
+  text-decoration: underline;
+}
+
+.additional-resources a:hover {
+  color: #151617;
+}
+
+.additional-resources i {
+  padding-right: 10px;
+}
+
+/* Large devices (desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+  .wrapper-width {
+    width: 1170px;
+    margin: auto;
+  }
+
+  /* == SITEWIDE */
+
+  /* -- HEADER */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px 0 12px 0;
+  }
+
+  .logo img {
+    width: 180px;
+  }
+
+  header ul {
+    display: flex;
+    gap: 50px;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  header a {
+    padding: 4px 8px;
+  }
+
+  .current-page {
+    background-color: #f6f7ee;
+    color: #151617;
+    padding: 4px 8px;
+    border-radius: 2px;
+  }
+
+  .current-page:hover {
+    color: initial;
+  }
+
+  /* -- FOOTER */
+
+  footer .wrapper-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 25px;
+  }
+
+  footer .wrapper-logos {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  footer nav {
+    padding: 0;
+  }
+
+  footer ul {
+    display: flex;
+    gap: 50px;
+  }
+
+  footer li {
+    margin: 0;
+  }
+
+  /* == HOMEPAGE */
+
+  /* -- HERO */
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 7rem;
+  }
+
+  .hero p {
+    max-width: 50%;
+    margin: 40px auto;
+  }
+
+  /* -- SERVICES */
+
+  .services {
+    max-width: 90%;
+    padding: 50px 0 60px;
+    margin: auto;
+  }
+
+  .services h2 {
+    font-size: 4rem;
+  }
+
+  .services h3 {
+    padding: 10px 0;
+  }
+
+  .services .wrapper-content {
+    display: flex;
+    gap: 8%;
+    margin: 30px 0;
+  }
+
+  .services .wrapper-item {
+    flex-basis: 33%;
+    flex-grow: 1;
+    margin-bottom: 40px;
+  }
+
+  .services i {
+    font-size: 5rem;
+  }
+
+  /* -- TESTIMONIALS */
+
+  .testimonials {
+    background-color: rgb(89, 83, 83);
+    background: linear-gradient(
+      to right bottom,
+      rgb(89, 83, 83),
+      rgb(44, 39, 39)
+    );
+    padding: 40px 0 80px;
+  }
+
+  .testimonials .wrapper-width {
+    max-width: 60%;
+  }
+
+  .testimonials h2 {
+    font-size: 4rem;
+    padding: 20px 0 40px;
+  }
+
+  .testimonials .desktop {
+    display: initial;
+  }
+
+  .testimonials .fa-quote-right {
+    display: none;
+  }
+
+  .testimonials .fa-quote-left {
+    float: left;
+    font-size: 5rem;
+    margin-bottom: 150px;
+    margin-right: 20px;
+  }
+
+  .testimonials p {
+    background-color: initial;
+    padding: 0;
+  }
+
+  .testimonials blockquote {
+    background-color: #f6f7ee;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .grid-span-2 {
+    grid-column: span 2;
+  }
+
+  .grid-span-2 .fa-quote-left {
+    margin-bottom: 90px;
+  }
+
+  .testimonials cite {
+    color: #151617;
+    align-self: flex-end;
+    padding-right: 40px;
+  }
+
+  .testimonials hr {
+    display: none;
+  }
+
+  .testimonials .wrapper-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+    position: relative;
+    right: 20px;
+  }
+
+  .testimonials p {
+    margin: 0;
+  }
+
+  /* -- BOOK APPOINTMENT */
+
+  .book-appointment {
+    background: linear-gradient(#151617, #151617);
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    max-width: 68%;
+  }
+
+  .book-appointment address {
+    width: 25%;
+    padding-left: 40px;
+  }
+
+  .book-appointment .wrapper-text,
+  .book-appointment address {
+    flex-grow: 1;
+  }
+
+  .book-appointment a,
+  .book-appointment i {
+    font-size: 2.2rem;
+    padding: 10px 0;
+  }
+
+  .book-appointment i {
+    margin-right: 10px;
+  }
+
+  .book-appointment h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+
+  .book-appointment .wrapper-text {
+    padding-left: 20px;
+  }
+
+  .book-appointment span {
+    display: block;
+  }
+
+  /* -- NEWSLETTER */
+
+  .newsletter {
+    width: 70%;
+    padding: 40px 40px 20px;
+    margin: 20px auto 90px;
+  }
+
+  .newsletter h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .newsletter input[type="submit"] {
+    padding: 12px 50px;
+  }
+
+  /* == ABOUT US */
+
+  .about-us-hero h1 {
+    padding-top: 60px;
+  }
+
+  .about-us-hero p {
+    max-width: 60%;
+    margin: auto;
+  }
+
+  /* -- OUR TEAM */
+
+  .our-team h2 {
+    padding: 80px 0 20px;
+  }
+
+  .our-team h3 {
+    padding: 20px 0;
+  }
+
+  .our-team ul {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .our-team li {
+    flex-basis: 40%;
+  }
+
+  .our-team .bio {
+    border: none;
+    padding: 0;
+  }
+
+  /* -- WHERE WE ARE */
+
+  .where-we-are {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0;
+  }
+
+  .where-we-are h2 {
+    font-size: 4rem;
+  }
+
+  .where-we-are hr {
+    color: #a62929;
+    width: 50%;
+  }
+
+  .where-we-are iframe {
+    flex-basis: 40%;
+  }
+
+  /* == SERVICES */
+
+  .services-page h1 {
+    padding: 60px 0;
+  }
+
+  .service-description {
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    gap: 80px;
+  }
+
+  .services-page .summary {
+    padding-bottom: 30px;
+  }
+
+  .service-info-accounting {
+    max-width: 50%;
+  }
+
+  .service-description h2,
+  .service-description h3 {
+    text-align: initial;
+  }
+
+  .services-page hr {
+    margin: 20px 0;
+    width: 200px;
+  }
+
+  .services-page .service p {
+    text-align: initial;
+  }
+
+  .services-page .service {
+    max-width: 40%;
+  }
+
+  .services-page .service-description {
+    padding-bottom: 80px;
+  }
+
+  .services-page .service-description:nth-child(3) {
+    padding-bottom: 100px;
+  }
+
+  .services-page .service-info {
+    padding-top: 95px;
+  }
+
+  .services-page .book-appointment {
+    padding-top: 60px;
+    margin: auto;
+    gap: 100px;
+  }
+
+  .services-page .book-appointment h2 {
+    max-width: 50%;
+  }
+
+  /* == RESOURCES */
+
+  .resources h1 {
+    padding-top: 60px;
+  }
+
+  .checklist {
+    font-size: 1.8rem;
+  }
+
+  .additional-resources {
+    padding: 50px 0 100px;
+  }
+
+  .additional-resources li {
+    font-size: 1.8rem;
+  }
+
+  .additional-resources div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .additional-resources h2 {
+    font-size: 3.5rem;
+    text-align: initial;
+    padding: 0;
+  }
+}
+
+/* Adjust some content for a wider viewport */
+
+@media only screen and (min-width: 1800px) {
+  .testimonials .wrapper-width {
+    max-width: 50%;
+  }
+
+  .book-appointment {
+    max-width: 55%;
+  }
+
+  .book-appointment address {
+    width: 25%;
+  }
+
+  .book-appointment .wrapper-text {
+    padding-left: 10px;
+  }
+
+  .service-description {
+    max-width: 40%;
+  }
+
+  .services-page .book-appointment {
+    max-width: 53%;
+  }
+}
