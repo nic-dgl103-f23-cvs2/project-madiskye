@@ -21,9 +21,10 @@
   <body>
     <header class="wrapper-width">
       <div class="wrapper-nav">
-        <a class="logo" width="150" href="index.html"
+        <a class="logo" href="index.html"
           ><img
             src="images/nicole-cahoon-logo-white.png"
+            width="150"
             alt="Nicole Cahoon logo"
         /></a>
         <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
@@ -178,7 +179,7 @@
           aria-label="Unit #1-350 17th Street Courtenay, British Columbia"
           loading="lazy"
           allow="fullscreen"
-          height="300px"
+          height="300"
         ></iframe>
       </section>
     </main>
@@ -216,13 +217,13 @@
         business owner.
       </p>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
   </body>
 </html>
-
-<!-- JavaScript -->
-<script>
-  function showNav() {
-    var element = document.getElementById("nav-items");
-    element.classList.toggle("show-items");
-  }
-</script>

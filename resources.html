@@ -21,9 +21,10 @@
   <body>
     <header class="wrapper-width">
       <div class="wrapper-nav">
-        <a class="logo" width="150" href="index.html"
+        <a class="logo" href="index.html"
           ><img
             src="images/nicole-cahoon-logo-white.png"
+            width="150"
             alt="Nicole Cahoon logo"
         /></a>
         <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
@@ -42,10 +43,8 @@
     <main class="resources">
       <h1>Resources</h1>
       <section class="checklist wrapper-width">
+        <h2>Tax Time Checklist</h2>
         <table>
-          <caption>
-            Tax Time Checklist
-          </caption>
           <thead>
             <tr>
               <th>Income</th>
@@ -249,13 +248,13 @@
         business owner.
       </p>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
   </body>
 </html>
-
-<!-- JavaScript -->
-<script>
-  function showNav() {
-    var element = document.getElementById("nav-items");
-    element.classList.toggle("show-items");
-  }
-</script>

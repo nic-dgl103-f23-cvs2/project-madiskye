@@ -486,6 +486,11 @@ strong {
   padding: 40px 0 60px;
 }
 
+.resources h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
 /* -- TAX CHECKLIST */
 
 .checklist {
@@ -533,13 +538,12 @@ tr:nth-child(even) {
 
 /* -- ADDITIONAL RESOURCES */
 
-.additional-resources {
-  padding-bottom: 80px;
+.additional-resources h2 {
+  padding-top: 20px;
 }
 
-.additional-resources h2 {
-  font-size: 3rem;
-  padding: 20px 0 20px;
+.additional-resources {
+  padding-bottom: 80px;
 }
 
 .additional-resources span {

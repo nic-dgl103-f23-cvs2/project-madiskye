@@ -22,9 +22,10 @@
   <body>
     <header class="wrapper-width">
       <div class="wrapper-nav">
-        <a class="logo" width="150" href="index.html"
+        <a class="logo" href="index.html"
           ><img
             src="images/nicole-cahoon-logo-white.png"
+            width="150"
             alt="Nicole Cahoon logo"
         /></a>
         <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
@@ -153,7 +154,7 @@
       <section class="wrapper-width">
         <div class="newsletter">
           <h2>Sign up for our newsletter for tax tips!</h2>
-          <form method="post" action="">
+          <form method="post">
             <div class="form-input">
               <label for="fname">First Name</label>
               <input type="text" name="firstname" id="fname" required />
@@ -205,13 +206,13 @@
         business owner.
       </p>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
   </body>
 </html>
-
-<!-- JavaScript -->
-<script>
-  function showNav() {
-    var element = document.getElementById("nav-items");
-    element.classList.toggle("show-items");
-  }
-</script>
